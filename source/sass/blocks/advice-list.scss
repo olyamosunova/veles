@@ -1,0 +1,38 @@
+.advice-list {
+  margin: 0;
+}
+
+.advice-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 146px;
+  margin: 0 16px;
+  padding: 40px 51px;
+
+  color: $white;
+
+  background: #1b2024 url("/img/in-time_mobile.jpg") 50% 0 no-repeat;
+}
+
+.advice-list__title {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.advice-list__link {
+  padding: 9px 15px 6px 19px;
+
+  font-size: 10px;
+  line-height: 12px;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  border: 1px solid $white;
+}

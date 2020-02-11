@@ -1,0 +1,53 @@
+.pagination-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-list__link {
+  padding: 8px 13px 10px 17px;
+
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: $pagination-color;
+
+  &--active {
+    color: $attention-color;
+    border: 1px solid $attention-color;
+  }
+
+  &--previous {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: calc(50% - 15px);
+      left: -15px;
+      width: 0;
+      height: 0;
+      border: 15px solid transparent;
+      border-right-color: black;
+      opacity: 0.3;
+    }
+  }
+
+  &--next {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: calc(50% - 15px);
+      left: 15px;
+      width: 0;
+      height: 0;
+      border: 15px solid transparent;
+      border-left-color: black;
+      opacity: 0.3;
+    }
+  }
+}

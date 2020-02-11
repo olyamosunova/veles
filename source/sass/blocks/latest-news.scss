@@ -40,3 +40,20 @@
 .latest-news__slider {
   margin: 0;
 }
+
+@media (min-width: $desktop-width) {
+  .latest-news {
+    background: url("/img/hotelBg_desktop.jpg");
+  }
+
+  .latest-news__title {
+    font-size: 72px;
+    line-height: 85px;
+  }
+
+  .latest-news__text {
+    margin: 0 492px;
+
+    order: 2;
+  }
+}

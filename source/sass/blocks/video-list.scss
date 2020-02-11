@@ -1,0 +1,43 @@
+.video-list__title {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.video-list__title {
+  text-align: center;
+  line-height: 150%;
+}
+
+.video-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 16px 30px;
+  padding: 40px 59px 42px;
+  min-height: 310px;
+
+  &--balloon {
+    background: #f9fafc url("/img/balloon_mobile.jpg") 50% 0 no-repeat;
+  }
+
+  &--photosession {
+    background: #1f2729 url("/img/photosession_mobile.jpg") 50% 0 no-repeat;
+
+    .video-list__title {
+      color: $white;
+    }
+  }
+
+  &--bird {
+    background: #0b0d0a url("/img/bird-show_mobile.jpg") 50% 0 no-repeat;
+
+    .video-list__title {
+      color: $white;
+    }
+  }
+}

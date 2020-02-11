@@ -12,7 +12,7 @@
         <button class="main-nav__toggle" type="button" name="open-menu">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list main-nav__list--close site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="#">Новости</a>
           </li>
@@ -58,8 +58,13 @@
           счет нефти
         </p>
         <ul class="latest-news__slider slider-list">
-          <li class="slider-list__item slider-list__item--active">
-            <a class="slider-list__link" href="#">
+          <li class="slider-list__item">
+            <a class="slider-list__link slider-list__link--previous" href="#">
+              <span class="visually-hidden">Предыдущий</span>
+            </a>
+          </li>
+          <li class="slider-list__item">
+            <a class="slider-list__link slider-list__link--active" href="#">
               <span class="visually-hidden">Слайд 1</span>
             </a>
           </li>
@@ -83,6 +88,11 @@
               <span class="visually-hidden">Слайд 5</span>
             </a>
           </li>
+          <li class="slider-list__item">
+            <a class="slider-list__link slider-list__link--next" href="#">
+              <span class="visually-hidden">Следующий</span>
+            </a>
+          </li>
         </ul>
       </section>
       <section class="news">
@@ -100,22 +110,31 @@
             </p>
           </li>
           <li class="news-list__item">
-            <h3 class="news-list__title title">
-              <a class="news-list__link" href="#">Открытие нового памятника Евгению Леонову</a>
-            </h3>
-            <p class="news-list__text">10 сентября в 15:00 был открыт памятник писателю</p>
+            <img class="news-list__img" src="img/news-1_mobile.jpg" width="127px" height="91px" alt="">
+            <div class="news-list__description">
+              <h3 class="news-list__title title">
+                <a class="news-list__link" href="#">Открытие нового памятника Евгению Леонову</a>
+              </h3>
+              <p class="news-list__text">10 сентября в 15:00 был открыт памятник писателю</p>
+            </div>
           </li>
           <li class="news-list__item">
-            <h3 class="news-list__title title">
-              <a class="news-list__link" href="#">Беседы с писателями</a>
-            </h3>
-            <p class="news-list__text">Русские писатели беседуют о важности искусства</p>
+            <img class="news-list__img" src="img/news-2_mobile.jpg" width="127px" height="91px" alt="">
+            <div class="news-list__description">
+              <h3 class="news-list__title title">
+                <a class="news-list__link" href="#">Беседы с писателями</a>
+              </h3>
+              <p class="news-list__text">Русские писатели беседуют о важности искусства</p>
+            </div>
           </li>
           <li class="news-list__item">
-            <h3 class="news-list__title title">
-              <a class="news-list__link" href="#">День и ночь св. Патрика: встреча старых друзей</a>
-            </h3>
-            <p class="news-list__text">Не Джойсом единым живет Ирландия!</p>
+            <img class="news-list__img" src="img/news-3_mobile.png" width="127px" height="91px" alt="">
+            <div class="news-list__description">
+              <h3 class="news-list__title title">
+                <a class="news-list__link" href="#">День и ночь св. Патрика: встреча старых друзей</a>
+              </h3>
+              <p class="news-list__text">Не Джойсом единым живет Ирландия!</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -123,9 +142,9 @@
         <h2 class="reviews__title">Обзоры</h2>
         <ul class="reviews__list reviews-list">
           <li class="reviews-list__item">
-            <img class="reviews-list__img" src="" alt="">
+            <img class="reviews-list__img" src="img/review-1_mobile.jpg" width="288px" height="203px" alt="">
             <h3 class="reviews-list__title title">
-              <a class="reviews-list__link" href="#">Шальные годы» Монпарнаса</a>
+              <a class="reviews-list__link" href="#">«Шальные годы» Монпарнаса</a>
             </h3>
             <p class="reviews-list__text">
               В Музее изобразительных искусств имени
@@ -135,7 +154,7 @@
             </p>
           </li>
           <li class="reviews-list__item">
-            <img class="reviews-list__img" src="" alt="">
+            <img class="reviews-list__img" src="img/review-2_mobile.png" width="288px" height="203px" alt="">
             <h3 class="reviews-list__title title">
               <a class="reviews-list__link" href="#">Анатомия за 30 секунд</a>
             </h3>
@@ -147,11 +166,11 @@
             </p>
           </li>
           <li class="reviews-list__item">
-            <img class="reviews-list__img" src="" alt="">
+            <img class="reviews-list__img" src="img/review-3_mobile.jpg" width="288px" height="203px" alt="">
             <h3 class="reviews-list__title title">
               <a class="reviews-list__link" href="#">Русские балетные сезоны</a>
             </h3>
-            <p class="reviews-list__text">>
+            <p class="reviews-list__text">
               В Новом Иерусалиме стартовал
               необычный культурно-развлекательный
               спектакль, который покажут в новом
@@ -159,11 +178,11 @@
             </p>
           </li>
           <li class="reviews-list__item">
-            <img class="reviews-list__img" src="" alt="">
+            <img class="reviews-list__img" src="img/review-4_mobile.jpg" width="288px" height="203px" alt="">
             <h3 class="reviews-list__title title">
               <a class="reviews-list__link" href="#">Сферические чудаки</a>
             </h3>
-            <p class="reviews-list__text">>
+            <p class="reviews-list__text">
               Корреспондентам «Культурного
               обозревателя» посчастливилось побывать
               в театре «Сфера» на премьере спектакля
@@ -173,10 +192,12 @@
         </ul>
         <ul class="reviews__pagination pagination-list">
           <li class="pagination-list__item">
-            <a class="pagination-list__link" href="#">Предыдущая</a>
+            <a class="pagination-list__link pagination-list__link--previous" href="#">
+              <span class="visually-hidden">Предыдущая</span>
+            </a>
           </li>
           <li class="pagination-list__item">
-            <a class="pagination-list__link" href="#">1</a>
+            <a class="pagination-list__link pagination-list__link--active" href="">1</a>
           </li>
           <li class="pagination-list__item">
             <a class="pagination-list__link" href="#">2</a>
@@ -191,29 +212,19 @@
             <a class="pagination-list__link" href="#">11</a>
           </li>
           <li class="pagination-list__item">
-            <a class="pagination-list__link" href="#">Следующая</a>
+            <a class="pagination-list__link pagination-list__link--next" href="#">
+              <span class="visually-hidden">Следующая</span>
+            </a>
           </li>
         </ul>
       </section>
       <section class="video">
         <h2 class="video__title visually-hidden">Видео</h2>
         <div class="video__block">
-          <ul class="video__list video-list">
-            <li class="video-list__item">
-              <h3 class="video-list__title">Ох, уж этот балет</h3>
-              <a class="video-link" href="#">Смотреть</a>
-            </li>
-            <li class="video-list__item">
-              <h3 class="video-list__title title">Воздушные шары</h3>
-              <a class="video-link" href="#">Смотреть</a>
-            </li>
-            <li class="video-list__item">
-              <h3 class="video-list__title title">Необычная фотосессия</h3>
-              <a class="video-link" href="#">Смотреть</a>
-            </li>
-            <li class="video-list__item">
-              <h3 class="video-list__title title">Выставка птиц</h3>
-              <a class="video-link" href="#">Смотреть</a>
+          <ul class="video__list movie-list">
+            <li class="movie-list__item movie-list__item--ballet">
+              <h3 class="movie-list__title">Ох, уж этот балет</h3>
+              <a class="movie-list__link button" href="#">Смотреть</a>
             </li>
           </ul>
         </div>
@@ -224,21 +235,47 @@
               <a class="advice-list__link" href="#">Смотреть</a>
             </li>
           </ul>
-          <ul class="video__slider slider-list">
+          <ul class="video__slider slider-list slider-list--video">
             <li class="slider-list__item">
-              <a class="slider-list__link" href="#">Слайд 1</a>
+              <a class="slider-list__link slider-list__link--active" href="#">
+                <span class="visually-hidden">Слайд 1</span>
+              </a>
             </li>
             <li class="slider-list__item">
-              <a class="slider-list__link" href="#">Слайд 2</a>
+              <a class="slider-list__link" href="#">
+                <span class="visually-hidden">Слайд 3</span>
+              </a>
             </li>
             <li class="slider-list__item">
-              <a class="slider-list__link" href="#">Слайд 3</a>
+              <a class="slider-list__link" href="#">
+                <span class="visually-hidden">Слайд 3</span>
+              </a>
             </li>
             <li class="slider-list__item">
-              <a class="slider-list__link" href="#">Слайд 4</a>
+              <a class="slider-list__link" href="#">
+                <span class="visually-hidden">Слайд 4</span>
+              </a>
             </li>
             <li class="slider-list__item">
-              <a class="slider-list__link" href="#">Слайд 5</a>
+              <a class="slider-list__link" href="#">
+                <span class="visually-hidden">Слайд 5</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="video__block">
+          <ul class="video__list video-list">
+            <li class="video-list__item video-list__item--balloon">
+              <h3 class="video-list__title title">Воздушные шары</h3>
+              <a class="video-list__link button button--balloon" href="#">Смотреть</a>
+            </li>
+            <li class="video-list__item video-list__item--photosession">
+              <h3 class="video-list__title title">Необычная фотосессия</h3>
+              <a class="video-list__link button" href="#">Смотреть</a>
+            </li>
+            <li class="video-list__item video-list__item--bird">
+              <h3 class="video-list__title title">Выставка птиц</h3>
+              <a class="video-list__link button" href="#">Смотреть</a>
             </li>
           </ul>
         </div>
@@ -247,5 +284,6 @@
 
     <footer class="page-footer"></footer>
 
+    <script src="js/open-menu.js"></script>
   </body>
 </html>
