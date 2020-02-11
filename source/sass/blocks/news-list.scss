@@ -1,0 +1,15 @@
+.news__list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  &--big {
+    min-height: 334px;
+    background: url("/img/news-0_mobile.jpg");
+  }
+}
