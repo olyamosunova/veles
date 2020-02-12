@@ -1,7 +1,6 @@
-.video__block {
+.video {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 50px;
 }
 
@@ -9,4 +8,11 @@
   margin: 0;
   margin-top: 46px;
   padding: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .video {
+    width: 100%;
+    order: 2;
+  }
 }

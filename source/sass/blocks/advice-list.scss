@@ -1,19 +1,25 @@
-.advice-list {
-  margin: 0;
-}
-
 .advice-list__item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 146px;
+  min-height: 107px;
+
   margin: 0 16px;
   padding: 40px 51px;
 
   color: $white;
 
-  background: #1b2024 url("/img/in-time_mobile.jpg") 50% 0 no-repeat;
+  &--inTime {
+    min-height: 146px;
+    background: #1b2024 url("/img/in-time_mobile.jpg") 50% 0 no-repeat;
+  }
+
+  &--dry,
+  &--layout,
+  &--plane {
+    display: none;
+  }
 }
 
 .advice-list__title {
@@ -35,4 +41,37 @@
   letter-spacing: 2px;
 
   border: 1px solid $white;
+}
+
+@media (min-width: $desktop-width) {
+  .advice-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .advice-list__item {
+    margin: 0;
+
+    &--dry,
+    &--layout,
+    &--plane {
+      display: block;
+      width: 270px;
+      background-position:  0 50%;
+      background-repeat: no-repeat;
+    }
+
+    &--dry {
+      background-image: url("/img/dry_desktop.jpg");
+    }
+
+    &--layout {
+      background-image: url("/img/layout_desktop.jpg");
+    }
+
+    &--plane {
+      background-image: url("/img/plane_desktop.jpg");
+    }
+  }
 }

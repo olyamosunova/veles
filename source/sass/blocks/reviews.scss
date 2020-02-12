@@ -16,3 +16,15 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    margin: 0;
+  }
+
+  .reviews__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

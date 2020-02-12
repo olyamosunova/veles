@@ -48,3 +48,23 @@
 .news-list__description {
   margin-left: 15px;
 }
+
+@media (min-width: $desktop-width) {
+  .news-list {
+    flex-wrap: wrap;
+    height: 334px;
+  }
+
+  .news-list__item {
+    width: 276px;
+    margin-bottom: 17px;
+
+    &--big {
+      width: 470px;
+      margin: 0;
+      margin-right: 29px;
+
+      background-image: url("/img/news-0_desktop.jpg");
+    }
+  }
+}

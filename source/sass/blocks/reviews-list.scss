@@ -1,7 +1,6 @@
 .reviews-list__item {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -18,4 +17,20 @@
 
 .reviews-list__img {
   display: block;
+}
+
+@media (min-width: $desktop-width) {
+  .reviews-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .reviews-list__item {
+    width: 370px;
+  }
+
+  .reviews-list__img {
+    width: 370px;
+  }
 }

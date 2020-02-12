@@ -1,3 +1,7 @@
+.video-list {
+  margin-top: 0;
+}
+
 .video-list__title {
   margin: 0;
 
@@ -38,6 +42,34 @@
 
     .video-list__title {
       color: $white;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-list__item {
+    width: 370px;
+    min-height: 479px;
+    margin: 0;
+    margin-bottom: 33px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--balloon {
+      padding: 48px 67px 30px;
+      background-image: url("/img/balloon_desktop.jpg");
+    }
+
+    &--photosession {
+      padding: 40px 61px 40px;
+      background-image: url("/img/photosession_desktop.jpg");
+    }
+
+    &--bird {
+      padding: 40px 87px 40px;
+      background-image: url("/img/bird-show_desktop.jpg");
     }
   }
 }
