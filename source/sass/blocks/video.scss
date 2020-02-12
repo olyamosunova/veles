@@ -12,6 +12,7 @@
 
 @media (min-width: $desktop-width) {
   .video {
+    position: relative;
     width: 100%;
     order: 2;
   }
