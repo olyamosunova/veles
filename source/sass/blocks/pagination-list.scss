@@ -6,8 +6,14 @@
   padding: 0;
 }
 
+.pagination-list__item {
+  &--desktop {
+    display: none;
+  }
+}
+
 .pagination-list__link {
-  padding: 8px 13px 10px 17px;
+  padding: 8px 14px;
 
   font-family: "Proxima Nova", "Arial", sans-serif;
   font-size: 18px;
@@ -19,7 +25,8 @@
     border: 1px solid $attention-color;
   }
 
-  &--previous {
+  &--previous,
+  &--next {
     position: relative;
 
     &:before {
@@ -36,24 +43,85 @@
   }
 
   &--next {
-    position: relative;
-
     &:before {
       content: "";
-      position: absolute;
-      top: calc(50% - 15px);
-      left: 15px;
-      width: 0;
-      height: 0;
       border: 15px solid transparent;
       border-left-color: black;
-      opacity: 0.3;
     }
   }
+
 }
 
 @media (min-width: $desktop-width) {
   .pagination-list {
-    margin-top: 29px;
+    margin: 29px 168px 0;
+    justify-content: center;
+  }
+
+  .pagination-list__item {
+    &--page {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+
+    &--previous {
+      margin-right: auto;
+    }
+
+    &--next {
+      margin-left: auto;
+    }
+  }
+
+  .pagination-list__link {
+    padding: 0 3px;
+    margin-right: 15px;
+
+    font-family: "Proxima Nova", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+
+    &--last {
+      margin-right: 0;
+    }
+
+    &--active {
+      font-size: 20px;
+      line-height: 24px;
+      color: $black;
+      border: none;
+      border-bottom: 3px solid $attention-color;
+    }
+
+    &--previous,
+    &--next {
+      &::before {
+        top: calc(50% - 6px);
+        left: 9px;
+
+        border-width: 9px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -4px;
+        left: 55px;
+        width: 1px;
+        height: 28px;
+
+        background-color: $black;
+        opacity: 0.3;
+      }
+    }
+
+    &--next {
+      &::after {
+        left: -20px;
+      }
+    }
   }
 }

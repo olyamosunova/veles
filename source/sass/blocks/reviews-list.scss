@@ -19,6 +19,13 @@
   display: block;
 }
 
+.reviews-list__picture-block {
+  &::after {
+    top: 20px;
+    right: 21px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .reviews-list {
     flex-direction: row;
@@ -27,6 +34,7 @@
   }
 
   .reviews-list__item {
+    position: relative;
     width: 370px;
   }
 

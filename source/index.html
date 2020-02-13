@@ -112,7 +112,9 @@
                 </p>
               </li>
               <li class="news-list__item">
-                <img class="news-list__img" src="img/news-1_mobile.jpg" width="127px" height="91px" alt="">
+                <div class="news-list__picture-block">
+                  <img class="news-list__img" src="img/news-1_mobile.jpg" width="127px" height="91px" alt="">
+                </div>
                 <div class="news-list__description">
                   <h3 class="news-list__title title">
                     <a class="news-list__link" href="#">Открытие нового памятника Евгению Леонову</a>
@@ -121,16 +123,20 @@
                 </div>
               </li>
               <li class="news-list__item">
-                <img class="news-list__img" src="img/news-2_mobile.jpg" width="127px" height="91px" alt="">
+                <div class="news-list__picture-block notes">
+                  <img class="news-list__img" src="img/news-2_mobile.jpg" width="127px" height="91px" alt="">
+                </div>
                 <div class="news-list__description">
-                  <h3 class="news-list__title title">
+                  <h3 class="news-list__title title notes-title">
                     <a class="news-list__link" href="#">Беседы с писателями</a>
                   </h3>
                   <p class="news-list__text">Русские писатели беседуют о важности искусства</p>
                 </div>
               </li>
               <li class="news-list__item">
-                <img class="news-list__img" src="img/news-3_mobile.png" width="127px" height="91px" alt="">
+                <div class="news-list__picture-block">
+                  <img class="news-list__img" src="img/news-3_mobile.png" width="127px" height="91px" alt="">
+                </div>
                 <div class="news-list__description">
                   <h3 class="news-list__title title">
                     <a class="news-list__link" href="#">День и ночь св. Патрика: встреча старых друзей</a>
@@ -159,11 +165,11 @@
                 </p>
               </li>
               <li class="reviews-list__item">
-                <picture>
+                <picture class="reviews-list__picture-block notes">
                   <source media="(min-width: 1440px)" srcset="img/review-2_desktop.png">
                   <img class="reviews-list__img" src="img/review-2_mobile.png" width="288px" height="203px" alt="">
                 </picture>
-                <h3 class="reviews-list__title title">
+                <h3 class="reviews-list__title title notes-title">
                   <a class="reviews-list__link" href="#">Анатомия за 30 секунд</a>
                 </h3>
                 <p class="reviews-list__text">
@@ -172,6 +178,22 @@
                   интерес к научно-популярной литературе
                   заметно вырос
                 </p>
+                <div class="reviews-list__activity activity">
+                  <p class="activity__indicators activity__indicators--view">
+                    <svg class="activity__icon" width="24" height="16" viewBox="0 0 24 16" fill="none">
+                      <path d="M12 7.46154C12.3197 7.46154 12.5789 7.22046 12.5789 6.92308C12.5789 6.62569 12.3197 6.38462 12 6.38462C11.6803 6.38462 11.4211 6.62569 11.4211 6.92308C11.4211 7.22046 11.6803 7.46154 12 7.46154Z" stroke="white" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M12 12.8462C14.8777 12.8462 17.2105 10.6765 17.2105 8C17.2105 5.32354 14.8777 3.15385 12 3.15385C9.12231 3.15385 6.78947 5.32354 6.78947 8C6.78947 10.6765 9.12231 12.8462 12 12.8462Z" stroke="white" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M1 8C1 8 4.92857 1 12 1C19.0714 1 23 8 23 8C23 8 19.0714 15 12 15C4.92857 15 1 8 1 8Z" stroke="white" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="activity__count">37</span>
+                  </p>
+                  <p class="activity__indicators activity__indicators--comment">
+                    <svg class="activity__icon" width="18" height="16" viewBox="0 0 18 16" fill="none">
+                      <path d="M9 13C13.4183 13 17 10.3137 17 7C17 3.68629 13.4183 1 9 1C4.58172 1 1 3.68629 1 7C1 9.23638 2.63138 11.187 5.05029 12.2189C5.10723 13.6066 4.56657 14.9449 3.28571 14.9449C4.27569 15.1239 6.68061 14.9618 8.70284 12.9959C8.80145 12.9986 8.90051 13 9 13Z" stroke="white" stroke-opacity="0.4"/>
+                    </svg>
+                    <span class="activity__count">2</span>
+                  </p>
+                </div>
               </li>
               <li class="reviews-list__item">
                 <picture>
@@ -205,7 +227,7 @@
               </li>
             </ul>
             <ul class="reviews__pagination pagination-list">
-              <li class="pagination-list__item">
+              <li class="pagination-list__item--previous">
                 <a class="pagination-list__link pagination-list__link--previous" href="#">
                   <span class="visually-hidden">Предыдущая</span>
                 </a>
@@ -219,13 +241,22 @@
               <li class="pagination-list__item">
                 <a class="pagination-list__link" href="#">3</a>
               </li>
+              <li class="pagination-list__item pagination-list__item--desktop">
+                <a class="pagination-list__link" href="#">4</a>
+              </li>
+              <li class="pagination-list__item pagination-list__item--desktop">
+                <a class="pagination-list__link" href="#">5</a>
+              </li>
               <li class="pagination-list__item">
                 <a class="pagination-list__link" href="#">...</a>
               </li>
-              <li class="pagination-list__item">
+              <li class="pagination-list__item pagination-list__item--page">
                 <a class="pagination-list__link" href="#">11</a>
               </li>
-              <li class="pagination-list__item">
+              <li class="pagination-list__item pagination-list__item--desktop">
+                <a class="pagination-list__link pagination-list__link--last" href="#">35</a>
+              </li>
+              <li class="pagination-list__item--next">
                 <a class="pagination-list__link pagination-list__link--next" href="#">
                   <span class="visually-hidden">Следующая</span>
                 </a>

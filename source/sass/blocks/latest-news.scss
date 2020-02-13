@@ -43,6 +43,7 @@
 
 @media (min-width: $desktop-width) {
   .latest-news {
+    padding-bottom: 50px;
     background: url("/img/hotelBg_desktop.jpg");
   }
 
@@ -52,7 +53,7 @@
   }
 
   .latest-news__text {
-    margin: 0 492px;
+    margin: 0 483px;
 
     order: 2;
   }
