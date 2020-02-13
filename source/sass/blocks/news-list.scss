@@ -19,7 +19,7 @@
     min-height: 334px;
     margin-bottom: 24px;
     padding: 0 15px 20px;
-    background: #f0f0f8 url("/img/news-0_mobile.jpg") 50% 0 no-repeat;
+    background: #f0f0f8 url("../img/news-0_mobile.jpg") 50% 0 no-repeat;
 
     .news-list__title {
       margin-bottom: 15px;
@@ -104,7 +104,7 @@
       margin: 0;
       margin-right: 29px;
 
-      background-image: url("/img/news-0_desktop.jpg");
+      background-image: url("../img/news-0_desktop.jpg");
     }
 
     &:last-child {

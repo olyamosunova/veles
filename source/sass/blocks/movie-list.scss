@@ -10,7 +10,7 @@
   padding: 46px 43px 42px;
 
   &--ballet {
-    background: $black url("/img/ballet_mobile.jpg") 50% 10px no-repeat ;
+    background: $black url("../img/ballet_mobile.jpg") 50% 10px no-repeat ;
   }
 }
 
@@ -30,7 +30,7 @@
     padding: 40px 111px 42px;
 
     &--ballet {
-      background-image: url("/img/ballet_desktop.jpg");
+      background-image: url("../img/ballet_desktop.jpg");
       background-position: 50% 0;
     }
   }

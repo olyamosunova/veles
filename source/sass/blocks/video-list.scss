@@ -26,11 +26,11 @@
   min-height: 310px;
 
   &--balloon {
-    background: #f9fafc url("/img/balloon_mobile.jpg") 50% 0 no-repeat;
+    background: #f9fafc url("../img/balloon_mobile.jpg") 50% 0 no-repeat;
   }
 
   &--photosession {
-    background: #1f2729 url("/img/photosession_mobile.jpg") 50% 0 no-repeat;
+    background: #1f2729 url("../img/photosession_mobile.jpg") 50% 0 no-repeat;
 
     .video-list__title {
       color: $white;
@@ -38,7 +38,7 @@
   }
 
   &--bird {
-    background: #0b0d0a url("/img/bird-show_mobile.jpg") 50% 0 no-repeat;
+    background: #0b0d0a url("../img/bird-show_mobile.jpg") 50% 0 no-repeat;
 
     .video-list__title {
       color: $white;
@@ -59,17 +59,17 @@
 
     &--balloon {
       padding: 48px 67px 30px;
-      background-image: url("/img/balloon_desktop.jpg");
+      background-image: url("../img/balloon_desktop.jpg");
     }
 
     &--photosession {
       padding: 40px 61px 40px;
-      background-image: url("/img/photosession_desktop.jpg");
+      background-image: url("../img/photosession_desktop.jpg");
     }
 
     &--bird {
       padding: 40px 87px 40px;
-      background-image: url("/img/bird-show_desktop.jpg");
+      background-image: url("../img/bird-show_desktop.jpg");
     }
   }
 }

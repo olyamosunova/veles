@@ -12,7 +12,7 @@
 
   &--inTime {
     min-height: 146px;
-    background: #1b2024 url("/img/in-time_mobile.jpg") 50% 0 no-repeat;
+    background: #1b2024 url("../img/in-time_mobile.jpg") 50% 0 no-repeat;
   }
 
   &--dry,
@@ -69,15 +69,15 @@
     }
 
     &--dry {
-      background-image: url("/img/dry_desktop.jpg");
+      background-image: url("../img/dry_desktop.jpg");
     }
 
     &--layout {
-      background-image: url("/img/layout_desktop.jpg");
+      background-image: url("../img/layout_desktop.jpg");
     }
 
     &--plane {
-      background-image: url("/img/plane_desktop.jpg");
+      background-image: url("../img/plane_desktop.jpg");
     }
   }
 }
