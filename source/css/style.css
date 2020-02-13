@@ -265,7 +265,10 @@ input[type="radio"].visually-hidden {
   background-color: #FF7931; }
 
 .latest-news__title {
+<<<<<<< HEAD
   max-width: 100%;
+=======
+>>>>>>> 8da61c619f255af656a97fc60f95d2a16f53b5f4
   margin: 0;
   font-size: 30px;
   line-height: 45px;
@@ -342,7 +345,11 @@ input[type="radio"].visually-hidden {
       height: 18px;
       border-radius: 0;
       opacity: 1;
+<<<<<<< HEAD
       background: transparent url("../img/rectangle-icon.svg") 0 0; }
+=======
+      background: transparent url("/img/rectangle-icon.svg") 0 0; }
+>>>>>>> 8da61c619f255af656a97fc60f95d2a16f53b5f4
       .slider-list__link--previous::before, .slider-list__link--next::before {
         content: "Предудыщуя";
         position: absolute;
@@ -406,7 +413,10 @@ input[type="radio"].visually-hidden {
     padding: 0 15px 20px;
     background: #f0f0f8 url("../img/news-0_mobile.jpg") 50% 0 no-repeat; }
     .news-list__item--big .news-list__title {
+<<<<<<< HEAD
       max-width: 100%;
+=======
+>>>>>>> 8da61c619f255af656a97fc60f95d2a16f53b5f4
       margin-bottom: 15px;
       font-size: 20px;
       line-height: 27px; }
@@ -544,7 +554,11 @@ input[type="radio"].visually-hidden {
     position: absolute;
     width: 14px;
     height: 15px;
+<<<<<<< HEAD
     background-image: url("../img/flag-icon.svg"); }
+=======
+    background-image: url("/img/flag-icon.svg"); }
+>>>>>>> 8da61c619f255af656a97fc60f95d2a16f53b5f4
 
 .notes-title {
   color: #FF7931; }
@@ -899,7 +913,11 @@ input[type="radio"].visually-hidden {
     right: 31px;
     width: 16px;
     height: 16px;
+<<<<<<< HEAD
     background: url("../img/shape-icon.svg"); }
+=======
+    background: url("/img/shape-icon.svg"); }
+>>>>>>> 8da61c619f255af656a97fc60f95d2a16f53b5f4
   .button:hover, .button:active {
     background-color: rgba(255, 121, 49, 0.7); }
   .button--balloon {
@@ -908,6 +926,12 @@ input[type="radio"].visually-hidden {
     .button--balloon:hover, .button--balloon:active {
       background-color: rgba(0, 0, 0, 0.7); }
 
+<<<<<<< HEAD
+=======
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* стили только для IE10 */ }
+
+>>>>>>> 8da61c619f255af656a97fc60f95d2a16f53b5f4
 .activity {
   display: none; }
 
