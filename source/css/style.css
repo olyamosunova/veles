@@ -265,9 +265,7 @@ input[type="radio"].visually-hidden {
   background-color: #FF7931; }
 
 .latest-news__title {
-
   max-width: 100%;
-
   margin: 0;
   font-size: 30px;
   line-height: 45px;
@@ -344,8 +342,7 @@ input[type="radio"].visually-hidden {
       height: 18px;
       border-radius: 0;
       opacity: 1;
-      background: transparent url("../img/rectangle-icon.svg") 0 0;
-    }
+      background: transparent url("../img/rectangle-icon.svg") 0 0; }
       .slider-list__link--previous::before, .slider-list__link--next::before {
         content: "Предудыщуя";
         position: absolute;
@@ -547,9 +544,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     width: 14px;
     height: 15px;
-
-    background-image: url("../img/flag-icon.svg");
-  }
+    background-image: url("../img/flag-icon.svg"); }
 
 .notes-title {
   color: #FF7931; }
@@ -904,18 +899,15 @@ input[type="radio"].visually-hidden {
     right: 31px;
     width: 16px;
     height: 16px;
-
-    background: url("../img/shape-icon.svg");
-  }
-
+    background: url("../img/shape-icon.svg"); }
   .button:hover, .button:active {
     background-color: rgba(255, 121, 49, 0.7); }
   .button--balloon {
     background-color: #FF7931;
     border-color: #FF7931; }
     .button--balloon:hover, .button--balloon:active {
-      background-color: rgba(0, 0, 0, 0.7);
-    }
+      background-color: rgba(0, 0, 0, 0.7); }
+
 .activity {
   display: none; }
 
