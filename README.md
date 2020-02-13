@@ -1,3 +1,2 @@
-# veles.github.io
+# veles
 Тестовое задание
-https://olyamosunova.github.io/veles.github.io/.
