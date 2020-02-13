@@ -69,8 +69,28 @@
   margin-left: 15px;
 }
 
+@media (min-width: $tablet-width) {
+  .news-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .news-list__item {
+    width: 50%;
+
+    &--big {
+      width: 100%;
+    }
+
+    &:last-child {
+      margin-bottom: 24px;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .news-list {
+    flex-direction: column;
     flex-wrap: wrap;
     height: 334px;
   }
@@ -85,6 +105,10 @@
       margin-right: 29px;
 
       background-image: url("/img/news-0_desktop.jpg");
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 

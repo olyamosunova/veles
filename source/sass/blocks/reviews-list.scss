@@ -20,18 +20,29 @@
 }
 
 .reviews-list__picture-block {
+  align-self: flex-start;
+
   &::after {
     top: 20px;
     right: 21px;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .reviews-list {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  .reviews-list__item {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 
   .reviews-list__item {
     position: relative;
