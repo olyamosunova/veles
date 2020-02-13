@@ -26,8 +26,18 @@
     background: url("/img/shape-icon.svg");
   }
 
+  &:hover,
+  &:active {
+    background-color: rgba($attention-color, 0.7);
+  }
+
   &--balloon {
     background-color: $attention-color;
     border-color: $attention-color;
+
+    &:hover,
+    &:active {
+      background-color: rgba($black, 0.7);
+    }
   }
 }

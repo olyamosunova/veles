@@ -43,6 +43,8 @@
 
 @media (min-width: $desktop-width) {
   .latest-news {
+    min-height: 464px;
+    padding-top: 50px;
     padding-bottom: 50px;
     background: url("/img/hotelBg_desktop.jpg");
   }
